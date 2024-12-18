@@ -81,5 +81,16 @@ console.log('De afdeling Customer Service heeft ' + departments['customer-servic
 
 console.log('Sales is een uitdagende afdeling om te werken als Verkoopmanager. ' + departments.sales.jobs[1].description);
 
-const userInput = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]');
-console.log(userInput);
+const departmentChoice = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]');
+console.log(departmentChoice);
+
+switch (departments) {
+    case 'marketing':
+        console.log('Je koos [marketing]. [departments.marketing.description]');
+        break;
+    case 'sales':
+        console.log('Je koos [sales]. [departments.sales.description]');
+        break;
+    case 'customer-service':
+        console.log('Je koos [customer-service]. [departments.customer-service.description]');
+        break;
