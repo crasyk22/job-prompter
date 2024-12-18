@@ -81,3 +81,5 @@ console.log('De afdeling Customer Service heeft ' + departments['customer-servic
 
 console.log('Sales is een uitdagende afdeling om te werken als Verkoopmanager. ' + departments.sales.jobs[1].description);
 
+const userInput = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]');
+console.log(userInput);
