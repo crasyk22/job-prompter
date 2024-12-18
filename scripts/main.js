@@ -101,17 +101,33 @@ switch (departments) {
 const (jobChoice = prompt "Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in."
 {
 
-    0
+
 :
-    [departments.marketing.title 0]
-    1
+    [departments.marketing.title[0]
+
 :
-    [departments.marketing.title 1]
-    2
+    [departments.marketing.title[1]
+
 :
-    [departments.marketing.title 2]
-    3
+    [departments.marketing.title[2]
+
 :
-    [departments.marketing.title 3]
+    [departments.marketing.title[3]
+
+}
+
+switch (jobChoice) {
+    case '0':
+        console.log('Je koos ' + departments.marketing.jobs[0].title + '. Een uitdagende rol! ' + departments.marketing.jobs[0].description);
+        break;
+    case '1':
+        console.log('Je koos ' + departments.marketing.jobs[1].title + '. Een uitdagende rol! ' + departments.marketing.jobs[1].description);
+        break;
+    case '2':
+        console.log('Je koos ' + departments.marketing.jobs[2].title + '. Een uitdagende rol! ' + departments.marketing.jobs[2].description);
+        break;
+    case '3':
+        console.log('Je koos ' + departments.marketing.jobs[3].title + '. Een uitdagende rol! ' + departments.marketing.jobs[3].description);
+        break;
 
 }
