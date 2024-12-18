@@ -97,3 +97,21 @@ switch (departments) {
     default:
         console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
 }
+
+const (jobChoice = prompt "Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in."
+{
+
+    0
+:
+    [departments.marketing.title 0]
+    1
+:
+    [departments.marketing.title 1]
+    2
+:
+    [departments.marketing.title 2]
+    3
+:
+    [departments.marketing.title 3]
+
+}
