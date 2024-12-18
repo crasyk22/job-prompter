@@ -94,3 +94,6 @@ switch (departments) {
     case 'customer-service':
         console.log('Je koos [customer-service]. [departments.customer-service.description]');
         break;
+    default:
+        console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
+}
